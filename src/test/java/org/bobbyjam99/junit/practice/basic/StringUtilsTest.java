@@ -11,5 +11,10 @@ public class StringUtilsTest {
 	public void toSnakeCaseはスネークケースを返す_aaaの場合() {
 		assertThat(StringUtils.toSnakeCase("aaa"), is("aaa"));
 	}
+	
+	@Test
+	public void toSnakeCaseはスネークケースを返す_HelloWorldの場合() {
+		assertThat(StringUtils.toSnakeCase("HelloWorld"), is("hello_world"));
+	}
 
 }

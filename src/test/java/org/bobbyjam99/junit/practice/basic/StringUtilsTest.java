@@ -17,4 +17,8 @@ public class StringUtilsTest {
 		assertThat(StringUtils.toSnakeCase("HelloWorld"), is("hello_world"));
 	}
 
+	@Test
+	public void toSnakeCaseはスネークケースを返す_practiceJunitの場合() {
+		assertThat(StringUtils.toSnakeCase("practiceJunit"), is("practice_junit"));
+	}
 }
